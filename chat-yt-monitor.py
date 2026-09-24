@@ -15,7 +15,7 @@ KEYWORDS = os.environ.get(
 ).split(",")
 
 #intervalo
-MIN_POLL_INTERVAL_SECONDS = 30
+MIN_POLL_INTERVAL_SECONDS = 10
 
 # ============================================================
 # LÓGICA DEL SCRIPT — normalmente no necesitas tocar nada de aquí abajo

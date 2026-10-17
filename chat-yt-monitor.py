@@ -6,10 +6,9 @@ import requests
 
 #config
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", "")
-VIDEO_ID = os.environ.get("VIDEO_ID", "")          # el que aparece en ?v=XXXXXXX de la URL
+VIDEO_ID = os.environ.get("VIDEO_ID", "")       
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL", "")
 
-# Palabras clave a buscar, separadas por coma en la variable KEYWORDS
 KEYWORDS = os.environ.get(
     "KEYWORDS", "forms,gle,forms.gle,short,docs,google"
 ).split(",")
@@ -17,9 +16,7 @@ KEYWORDS = os.environ.get(
 #intervalo
 MIN_POLL_INTERVAL_SECONDS = 10
 
-# ============================================================
-# LÓGICA DEL SCRIPT — normalmente no necesitas tocar nada de aquí abajo
-# ============================================================
+
 
 YOUTUBE_API_BASE = "https://www.googleapis.com/youtube/v3"
 
